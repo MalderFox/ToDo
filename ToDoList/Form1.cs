@@ -14,7 +14,7 @@ namespace ToDoList {
         Item activeItem;
         RecordColumn columnsUpdate;
 
-        const string dtFormat = "dd.MM.yyy HH:mm";
+        const string dtFormat = "dd.MM.yyyy HH:mm";
 
         public Form1() {
             InitializeComponent();
