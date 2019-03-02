@@ -5,12 +5,18 @@ using System;
 
 namespace ToDoList {
 
+    /// <summary>
+    /// Перечисление вариантов цвета записи.
+    /// </summary>
     public enum Level {
         Green,
         Yellow,
         Red
     }
 
+    /// <summary>
+    /// Обёртка для строк БД.
+    /// </summary>
     public class Record {
 
         public int ID { get; private set; }

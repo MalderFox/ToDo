@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace ToDoList {
 
+    /// <summary>
+    /// Форма для добавления записи в базу.
+    /// </summary>
     public partial class AddForm : Form {
 
         Form1 parent;

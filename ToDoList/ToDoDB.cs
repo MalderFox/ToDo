@@ -7,6 +7,9 @@ using System.Data.SqlClient;
 
 namespace ToDoList {
 
+    /// <summary>
+    /// Перечисление столбцов, в которые были сделаны изменения.
+    /// </summary>
     [Flags]
     enum RecordColumn {
         Nothing = 0,
@@ -16,6 +19,9 @@ namespace ToDoList {
         Start = 8
     }
 
+    /// <summary>
+    /// Работа с БД.
+    /// </summary>
     class ToDoDB {
 
         readonly string connectionString;
@@ -90,6 +96,9 @@ namespace ToDoList {
             }
         }
 
+        /// <summary>
+        /// Добавить дату и время, когда запись считается завершённой.
+        /// </summary>
         public DateTime Finish(int recordID) {
             DateTime dateTime = DateTime.Now;
             using (SqlConnection connection = new SqlConnection(connectionString)) {

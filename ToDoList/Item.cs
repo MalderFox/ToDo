@@ -6,6 +6,9 @@ using System.Drawing;
 
 namespace ToDoList {
 
+    /// <summary>
+    /// Обёртка над ListViewItem для получения значений столбцов.
+    /// </summary>
     class Item {
 
         ListViewItem item;
